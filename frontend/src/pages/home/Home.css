@@ -1,0 +1,55 @@
+.home {
+	display: flex;
+	justify-content: center;
+	font-family: "Times New Roman", Times, serif;
+}
+.Sidebar {
+	display: flex;
+	flex-direction: column;
+}
+.navbar_container {
+	display: none;
+	padding: 1rem 2rem;
+	color: white;
+}
+.heading {
+	font-size: 2rem;
+	font-weight: 900;
+	font-family: "Courier New", Courier, monospace;
+}
+.logo_text {
+	display: flex;
+	align-items: center;
+	text-align: end;
+	gap: 0.8rem;
+	/* padding: 0.5rem 1rem; */
+}
+.logout-btn {
+	align-items: center;
+}
+.user_conversation {
+	padding: 0.2rem;
+	border-radius: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+@media (max-width: 640px) {
+	.navbar_container {
+		display: block;
+	}
+	.Sidebar {
+		display: none;
+	}
+	.home {
+		height: 100vh;
+		width: 100%;
+		display: block;
+	}
+	.message_container {
+		width: 100%;
+		height: 64vh;
+	}
+}
